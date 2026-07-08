@@ -1,0 +1,2255 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20241.24.0425.1340                               -->
+<workbook original-version='18.1' source-build='2024.1.2 (20241.24.0425.1340)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <_.fcp.AccessibleZoneTabOrder.true...AccessibleZoneTabOrder />
+    <_.fcp.AnimationOnByDefault.true...AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <MapboxVectorStylesAndLayers />
+    <_.fcp.MarkAnimation.true...MarkAnimation />
+    <_.fcp.ObjectModelEncapsulateLegacy.true...ObjectModelEncapsulateLegacy />
+    <_.fcp.ObjectModelExtractV2.true...ObjectModelExtractV2 />
+    <_.fcp.ObjectModelTableType.true...ObjectModelTableType />
+    <_.fcp.SchemaViewerObjectModel.true...SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <_.fcp.VConnDownstreamExtractsWithWarnings.true...VConnDownstreamExtractsWithWarnings />
+    <WindowsPersistSimpleIdentifiers />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <_.fcp.AnimationOnByDefault.false...style>
+    <_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule element='animation'>
+      <_.fcp.AnimationOnByDefault.false...format attr='animation-on' value='ao-on' />
+    </_.fcp.AnimationOnByDefault.false..._.fcp.MarkAnimation.true...style-rule>
+  </_.fcp.AnimationOnByDefault.false...style>
+  <datasources>
+    <datasource caption='fact_accidentes' inline='true' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='fact_accidentes' name='textscan.1ijxf2b1d2di7e15r8asq1q1sf5i'>
+            <connection class='textscan' directory='D:/Datasets/2026_accidentesCDMX/Data/Processed' filename='fact_accidentes.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <_.fcp.ObjectModelEncapsulateLegacy.false...relation connection='textscan.1ijxf2b1d2di7e15r8asq1q1sf5i' name='fact_accidentes.csv' table='[fact_accidentes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id_accidente' ordinal='0' />
+            <column datatype='integer' name='no_folio' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy-MM-dd|#|#|MM/dd/yyyy' name='fecha_even' ordinal='2' />
+            <column datatype='integer' name='ano_evento' ordinal='3' />
+            <column datatype='string' name='mes' ordinal='4' />
+            <column datatype='string' name='dia' ordinal='5' />
+            <column datatype='datetime' name='hora' ordinal='6' />
+            <column datatype='real' name='hora2' ordinal='7' />
+            <column datatype='string' name='condicion' ordinal='8' />
+            <column datatype='string' name='tipo_de_ev' ordinal='9' />
+            <column datatype='real' name='coordenada' ordinal='10' />
+            <column datatype='real' name='coordena_1' ordinal='11' />
+            <column datatype='string' name='punto_1' ordinal='12' />
+            <column datatype='string' name='punto_2' ordinal='13' />
+            <column datatype='string' name='colonia' ordinal='14' />
+            <column datatype='string' name='alcaldia' ordinal='15' />
+            <column datatype='string' name='tipo_de_ve' ordinal='16' />
+            <column datatype='string' name='tipo_de__1' ordinal='17' />
+            <column datatype='string' name='tipo_de__2' ordinal='18' />
+            <column datatype='string' name='tipo_de__3' ordinal='19' />
+            <column datatype='string' name='marca_de_v' ordinal='20' />
+            <column datatype='string' name='marca_de_1' ordinal='21' />
+            <column datatype='string' name='marca_de_2' ordinal='22' />
+            <column datatype='string' name='marca_de_3' ordinal='23' />
+            <column datatype='string' name='lesiones' ordinal='24' />
+            <column datatype='string' name='edad_lesio' ordinal='25' />
+            <column datatype='integer' name='total_occi' ordinal='26' />
+            <column datatype='integer' name='occisos_fe' ordinal='27' />
+            <column datatype='integer' name='occisos_ma' ordinal='28' />
+            <column datatype='integer' name='total_lesi' ordinal='29' />
+            <column datatype='string' name='identidad' ordinal='30' />
+            <column datatype='string' name='unidad_med' ordinal='31' />
+            <column datatype='string' name='lugar_del_' ordinal='32' />
+            <column datatype='real' name='trasladado' ordinal='33' />
+            <column datatype='string' name='hospital' ordinal='34' />
+            <column datatype='string' name='prioridad' ordinal='35' />
+            <column datatype='string' name='observacio' ordinal='36' />
+            <column datatype='integer' name='id_origen' ordinal='37' />
+            <column datatype='string' name='tipo_accidente' ordinal='38' />
+            <column datatype='string' name='fecha' ordinal='39' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+        <_.fcp.ObjectModelEncapsulateLegacy.true...relation connection='textscan.1ijxf2b1d2di7e15r8asq1q1sf5i' name='fact_accidentes.csv' table='[fact_accidentes#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+            <column datatype='integer' name='id_accidente' ordinal='0' />
+            <column datatype='integer' name='no_folio' ordinal='1' />
+            <column datatype='date' date-parse-format='yyyy-MM-dd|#|#|MM/dd/yyyy' name='fecha_even' ordinal='2' />
+            <column datatype='integer' name='ano_evento' ordinal='3' />
+            <column datatype='string' name='mes' ordinal='4' />
+            <column datatype='string' name='dia' ordinal='5' />
+            <column datatype='datetime' name='hora' ordinal='6' />
+            <column datatype='real' name='hora2' ordinal='7' />
+            <column datatype='string' name='condicion' ordinal='8' />
+            <column datatype='string' name='tipo_de_ev' ordinal='9' />
+            <column datatype='real' name='coordenada' ordinal='10' />
+            <column datatype='real' name='coordena_1' ordinal='11' />
+            <column datatype='string' name='punto_1' ordinal='12' />
+            <column datatype='string' name='punto_2' ordinal='13' />
+            <column datatype='string' name='colonia' ordinal='14' />
+            <column datatype='string' name='alcaldia' ordinal='15' />
+            <column datatype='string' name='tipo_de_ve' ordinal='16' />
+            <column datatype='string' name='tipo_de__1' ordinal='17' />
+            <column datatype='string' name='tipo_de__2' ordinal='18' />
+            <column datatype='string' name='tipo_de__3' ordinal='19' />
+            <column datatype='string' name='marca_de_v' ordinal='20' />
+            <column datatype='string' name='marca_de_1' ordinal='21' />
+            <column datatype='string' name='marca_de_2' ordinal='22' />
+            <column datatype='string' name='marca_de_3' ordinal='23' />
+            <column datatype='string' name='lesiones' ordinal='24' />
+            <column datatype='string' name='edad_lesio' ordinal='25' />
+            <column datatype='integer' name='total_occi' ordinal='26' />
+            <column datatype='integer' name='occisos_fe' ordinal='27' />
+            <column datatype='integer' name='occisos_ma' ordinal='28' />
+            <column datatype='integer' name='total_lesi' ordinal='29' />
+            <column datatype='string' name='identidad' ordinal='30' />
+            <column datatype='string' name='unidad_med' ordinal='31' />
+            <column datatype='string' name='lugar_del_' ordinal='32' />
+            <column datatype='real' name='trasladado' ordinal='33' />
+            <column datatype='string' name='hospital' ordinal='34' />
+            <column datatype='string' name='prioridad' ordinal='35' />
+            <column datatype='string' name='observacio' ordinal='36' />
+            <column datatype='integer' name='id_origen' ordinal='37' />
+            <column datatype='string' name='tipo_accidente' ordinal='38' />
+            <column datatype='string' name='fecha' ordinal='39' />
+          </columns>
+        </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_accidente</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_accidente]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>id_accidente</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>no_folio</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[no_folio]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>no_folio</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fecha_even</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fecha_even]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>fecha_even</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ano_evento</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ano_evento]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>ano_evento</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>mes</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[mes]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>mes</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>dia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[dia]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>dia</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hora</remote-name>
+            <remote-type>134</remote-type>
+            <local-name>[hora]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>hora</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>datetime</local-type>
+            <aggregation>Hour</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hora2</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[hora2]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>hora2</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>condicion</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[condicion]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>condicion</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_de_ev</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_de_ev]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>tipo_de_ev</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coordenada</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coordenada]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>coordenada</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>coordena_1</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[coordena_1]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>coordena_1</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>punto_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[punto_1]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>punto_1</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>punto_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[punto_2]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>punto_2</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>colonia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[colonia]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>colonia</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>alcaldia</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[alcaldia]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>alcaldia</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_de_ve</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_de_ve]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>tipo_de_ve</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_de__1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_de__1]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>tipo_de__1</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_de__2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_de__2]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>tipo_de__2</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_de__3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_de__3]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>tipo_de__3</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marca_de_v</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marca_de_v]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>marca_de_v</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marca_de_1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marca_de_1]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>marca_de_1</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marca_de_2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marca_de_2]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>marca_de_2</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>marca_de_3</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[marca_de_3]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>marca_de_3</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lesiones</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lesiones]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>lesiones</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>edad_lesio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[edad_lesio]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>edad_lesio</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_occi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_occi]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>total_occi</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occisos_fe</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[occisos_fe]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>occisos_fe</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>occisos_ma</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[occisos_ma]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>occisos_ma</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>total_lesi</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[total_lesi]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>total_lesi</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>identidad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[identidad]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>identidad</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>unidad_med</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[unidad_med]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>unidad_med</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>lugar_del_</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[lugar_del_]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>lugar_del_</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>trasladado</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[trasladado]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>trasladado</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>hospital</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[hospital]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>hospital</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>prioridad</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[prioridad]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>prioridad</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>observacio</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[observacio]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>observacio</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>id_origen</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[id_origen]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>id_origen</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>tipo_accidente</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[tipo_accidente]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>tipo_accidente</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>fecha</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[fecha]</local-name>
+            <parent-name>[fact_accidentes.csv]</parent-name>
+            <remote-alias>fecha</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Freq' datatype='integer' name='[Calculation_1475491848796438528]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='totalAccidentes' datatype='integer' name='[Calculation_1475491848836407298]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([id_accidente])' />
+      </column>
+      <column caption='Total Accidentes' datatype='integer' name='[Calculation_1475491848962101251]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([id_accidente])' />
+      </column>
+      <_.fcp.ObjectModelTableType.true...column caption='fact_accidentes.csv' datatype='table' name='[__tableau_internal_object_id__].[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]' role='measure' type='quantitative' />
+      <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+      <column caption='Ano Evento' datatype='integer' name='[ano_evento]' role='measure' type='quantitative' />
+      <column caption='Colonia' datatype='string' name='[colonia]' role='dimension' type='nominal' />
+      <column caption='Condicion' datatype='string' name='[condicion]' role='dimension' type='nominal' />
+      <column aggregation='Avg' caption='Coordena 1' datatype='real' name='[coordena_1]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Coordenada' datatype='real' name='[coordenada]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Dia' datatype='string' name='[dia]' role='dimension' type='nominal' />
+      <column caption='Edad Lesio' datatype='string' name='[edad_lesio]' role='dimension' type='nominal' />
+      <column caption='Fecha' datatype='string' name='[fecha]' role='dimension' type='nominal' />
+      <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+      <column caption='Hora2' datatype='real' name='[hora2]' role='measure' type='quantitative' />
+      <column caption='Hora' datatype='datetime' name='[hora]' role='dimension' type='ordinal' />
+      <column caption='Hospital' datatype='string' name='[hospital]' role='dimension' type='nominal' />
+      <column caption='Id Accidente' datatype='integer' name='[id_accidente]' role='dimension' type='ordinal' />
+      <column caption='Id Origen' datatype='integer' name='[id_origen]' role='dimension' type='ordinal' />
+      <column caption='Identidad' datatype='string' name='[identidad]' role='dimension' type='nominal' />
+      <column caption='Lesiones' datatype='string' name='[lesiones]' role='dimension' type='nominal' />
+      <column caption='Lugar Del' datatype='string' name='[lugar_del_]' role='dimension' type='nominal' />
+      <column caption='Marca De 1' datatype='string' name='[marca_de_1]' role='dimension' type='nominal' />
+      <column caption='Marca De 2' datatype='string' name='[marca_de_2]' role='dimension' type='nominal' />
+      <column caption='Marca De 3' datatype='string' name='[marca_de_3]' role='dimension' type='nominal' />
+      <column caption='Marca De V' datatype='string' name='[marca_de_v]' role='dimension' type='nominal' />
+      <column caption='Mes' datatype='string' name='[mes]' role='dimension' type='nominal' />
+      <column caption='No Folio' datatype='integer' name='[no_folio]' role='measure' type='quantitative' />
+      <column caption='Observacio' datatype='string' name='[observacio]' role='dimension' type='nominal' />
+      <column caption='Occisos Fe' datatype='integer' name='[occisos_fe]' role='measure' type='quantitative' />
+      <column caption='Occisos Ma' datatype='integer' name='[occisos_ma]' role='measure' type='quantitative' />
+      <column caption='Prioridad' datatype='string' name='[prioridad]' role='dimension' type='nominal' />
+      <column caption='Punto 1' datatype='string' name='[punto_1]' role='dimension' type='nominal' />
+      <column caption='Punto 2' datatype='string' name='[punto_2]' role='dimension' type='nominal' />
+      <column caption='Tipo Accidente' datatype='string' name='[tipo_accidente]' role='dimension' type='nominal' />
+      <column caption='Tipo_De__1' datatype='string' name='[tipo_de__1]' role='dimension' type='nominal' />
+      <column caption='Tipo_De__2' datatype='string' name='[tipo_de__2]' role='dimension' type='nominal' />
+      <column caption='Tipo_De__3' datatype='string' name='[tipo_de__3]' role='dimension' type='nominal' />
+      <column caption='Tipo De Ev' datatype='string' name='[tipo_de_ev]' role='dimension' type='nominal' />
+      <column caption='Tipo De Ve' datatype='string' name='[tipo_de_ve]' role='dimension' type='nominal' />
+      <column caption='Total Lesi' datatype='integer' name='[total_lesi]' role='measure' type='quantitative' />
+      <column caption='Total Occi' datatype='integer' name='[total_occi]' role='measure' type='quantitative' />
+      <column caption='Trasladado' datatype='real' name='[trasladado]' role='measure' type='quantitative' />
+      <column caption='Unidad Med' datatype='string' name='[unidad_med]' role='dimension' type='nominal' />
+      <column-instance column='[identidad]' derivation='None' name='[none:identidad:nk]' pivot='key' type='nominal' />
+      <extract _.fcp.ObjectModelExtractV2.true...object-id='' _.fcp.VConnDownstreamExtractsWithWarnings.true...user-specific='false' count='-1' enabled='true' units='records'>
+        <connection access_mode='readonly' author-locale='en_GB' class='hyper' dbname='C:/Users/sulli/AppData/Local/Temp/TableauTemp/#TableauTemp_0ib50vh0snb3bg1h3zhcm0w0wg8t.hyper' default-settings='hyper' schema='Extract' sslmode='' tablename='Extract' update-time='07/08/2026 03:42:24 AM' username='tableau_internal_user'>
+          <_.fcp.ObjectModelEncapsulateLegacy.false...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy-MM-dd|#|#|MM/dd/yyyy' name='fecha_even' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.false...relation>
+          <_.fcp.ObjectModelEncapsulateLegacy.true...relation name='Extract' table='[Extract].[Extract]' type='table'>
+            <columns>
+              <column datatype='date' date-parse-format='yyyy-MM-dd|#|#|MM/dd/yyyy' name='fecha_even' />
+            </columns>
+          </_.fcp.ObjectModelEncapsulateLegacy.true...relation>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>id_accidente</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_accidente]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id_accidente</remote-alias>
+              <ordinal>0</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4657</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>no_folio</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[no_folio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>no_folio</remote-alias>
+              <ordinal>1</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4657</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fecha_even</remote-name>
+              <remote-type>7</remote-type>
+              <local-name>[fecha_even]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fecha_even</remote-alias>
+              <ordinal>2</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>ano_evento</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[ano_evento]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>ano_evento</remote-alias>
+              <ordinal>3</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>mes</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[mes]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>mes</remote-alias>
+              <ordinal>4</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>12</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>dia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[dia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>dia</remote-alias>
+              <ordinal>5</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hora</remote-name>
+              <remote-type>134</remote-type>
+              <local-name>[hora]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hora</remote-alias>
+              <ordinal>6</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>datetime</local-type>
+              <aggregation>Hour</aggregation>
+              <approx-count>1197</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hora2</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[hora2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hora2</remote-alias>
+              <ordinal>7</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>condicion</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[condicion]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>condicion</remote-alias>
+              <ordinal>8</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_de_ev</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_de_ev]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_de_ev</remote-alias>
+              <ordinal>9</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coordenada</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coordenada]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coordenada</remote-alias>
+              <ordinal>10</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3777</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>coordena_1</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[coordena_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>coordena_1</remote-alias>
+              <ordinal>11</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>3196</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>punto_1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[punto_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>punto_1</remote-alias>
+              <ordinal>12</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>996</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>punto_2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[punto_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>punto_2</remote-alias>
+              <ordinal>13</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1524</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>colonia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[colonia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>colonia</remote-alias>
+              <ordinal>14</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>885</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>alcaldia</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[alcaldia]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>alcaldia</remote-alias>
+              <ordinal>15</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_de_ve</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_de_ve]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_de_ve</remote-alias>
+              <ordinal>16</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>13</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_de__1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_de__1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_de__1</remote-alias>
+              <ordinal>17</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>14</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_de__2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_de__2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_de__2</remote-alias>
+              <ordinal>18</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>11</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_de__3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_de__3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_de__3</remote-alias>
+              <ordinal>19</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marca_de_v</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marca_de_v]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marca_de_v</remote-alias>
+              <ordinal>20</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>177</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marca_de_1</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marca_de_1]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marca_de_1</remote-alias>
+              <ordinal>21</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>36</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marca_de_2</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marca_de_2]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marca_de_2</remote-alias>
+              <ordinal>22</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>marca_de_3</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[marca_de_3]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>marca_de_3</remote-alias>
+              <ordinal>23</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lesiones</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lesiones]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lesiones</remote-alias>
+              <ordinal>24</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>528</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>edad_lesio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[edad_lesio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>edad_lesio</remote-alias>
+              <ordinal>25</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>223</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_occi</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_occi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_occi</remote-alias>
+              <ordinal>26</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occisos_fe</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[occisos_fe]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occisos_fe</remote-alias>
+              <ordinal>27</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>occisos_ma</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[occisos_ma]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>occisos_ma</remote-alias>
+              <ordinal>28</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>total_lesi</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[total_lesi]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>total_lesi</remote-alias>
+              <ordinal>29</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>identidad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[identidad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>identidad</remote-alias>
+              <ordinal>30</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>unidad_med</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[unidad_med]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>unidad_med</remote-alias>
+              <ordinal>31</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>130</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>lugar_del_</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[lugar_del_]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>lugar_del_</remote-alias>
+              <ordinal>32</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>trasladado</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[trasladado]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>trasladado</remote-alias>
+              <ordinal>33</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>4</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>hospital</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[hospital]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>hospital</remote-alias>
+              <ordinal>34</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>210</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>prioridad</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[prioridad]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>prioridad</remote-alias>
+              <ordinal>35</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>observacio</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[observacio]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>observacio</remote-alias>
+              <ordinal>36</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>61</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>id_origen</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[id_origen]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>id_origen</remote-alias>
+              <ordinal>37</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>2507</approx-count>
+              <contains-null>true</contains-null>
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>tipo_accidente</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[tipo_accidente]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>tipo_accidente</remote-alias>
+              <ordinal>38</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>fecha</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[fecha]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>fecha</remote-alias>
+              <ordinal>39</ordinal>
+              <family>fact_accidentes.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <_.fcp.ObjectModelEncapsulateLegacy.true...object-id>[fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE]</_.fcp.ObjectModelEncapsulateLegacy.true...object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout _.fcp.SchemaViewerObjectModel.false...dim-percentage='0.5' _.fcp.SchemaViewerObjectModel.false...measure-percentage='0.4' dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:identidad:nk]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;CICLISTA&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;PEATON&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;Mexico&quot;' />
+      </semantic-values>
+      <_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+        <objects>
+          <object caption='fact_accidentes.csv' id='fact_accidentes.csv_E7B6AAB08797418390CC18B7E3E655EE'>
+            <properties context=''>
+              <relation connection='textscan.1ijxf2b1d2di7e15r8asq1q1sf5i' name='fact_accidentes.csv' table='[fact_accidentes#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_US' separator=','>
+                  <column datatype='integer' name='id_accidente' ordinal='0' />
+                  <column datatype='integer' name='no_folio' ordinal='1' />
+                  <column datatype='date' date-parse-format='yyyy-MM-dd|#|#|MM/dd/yyyy' name='fecha_even' ordinal='2' />
+                  <column datatype='integer' name='ano_evento' ordinal='3' />
+                  <column datatype='string' name='mes' ordinal='4' />
+                  <column datatype='string' name='dia' ordinal='5' />
+                  <column datatype='datetime' name='hora' ordinal='6' />
+                  <column datatype='real' name='hora2' ordinal='7' />
+                  <column datatype='string' name='condicion' ordinal='8' />
+                  <column datatype='string' name='tipo_de_ev' ordinal='9' />
+                  <column datatype='real' name='coordenada' ordinal='10' />
+                  <column datatype='real' name='coordena_1' ordinal='11' />
+                  <column datatype='string' name='punto_1' ordinal='12' />
+                  <column datatype='string' name='punto_2' ordinal='13' />
+                  <column datatype='string' name='colonia' ordinal='14' />
+                  <column datatype='string' name='alcaldia' ordinal='15' />
+                  <column datatype='string' name='tipo_de_ve' ordinal='16' />
+                  <column datatype='string' name='tipo_de__1' ordinal='17' />
+                  <column datatype='string' name='tipo_de__2' ordinal='18' />
+                  <column datatype='string' name='tipo_de__3' ordinal='19' />
+                  <column datatype='string' name='marca_de_v' ordinal='20' />
+                  <column datatype='string' name='marca_de_1' ordinal='21' />
+                  <column datatype='string' name='marca_de_2' ordinal='22' />
+                  <column datatype='string' name='marca_de_3' ordinal='23' />
+                  <column datatype='string' name='lesiones' ordinal='24' />
+                  <column datatype='string' name='edad_lesio' ordinal='25' />
+                  <column datatype='integer' name='total_occi' ordinal='26' />
+                  <column datatype='integer' name='occisos_fe' ordinal='27' />
+                  <column datatype='integer' name='occisos_ma' ordinal='28' />
+                  <column datatype='integer' name='total_lesi' ordinal='29' />
+                  <column datatype='string' name='identidad' ordinal='30' />
+                  <column datatype='string' name='unidad_med' ordinal='31' />
+                  <column datatype='string' name='lugar_del_' ordinal='32' />
+                  <column datatype='real' name='trasladado' ordinal='33' />
+                  <column datatype='string' name='hospital' ordinal='34' />
+                  <column datatype='string' name='prioridad' ordinal='35' />
+                  <column datatype='string' name='observacio' ordinal='36' />
+                  <column datatype='integer' name='id_origen' ordinal='37' />
+                  <column datatype='string' name='tipo_accidente' ordinal='38' />
+                  <column datatype='string' name='fecha' ordinal='39' />
+                </columns>
+              </relation>
+            </properties>
+            <properties context='extract'>
+              <relation name='Extract' table='[Extract].[Extract]' type='table'>
+                <columns>
+                  <column datatype='date' date-parse-format='yyyy-MM-dd|#|#|MM/dd/yyyy' name='fecha_even' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </_.fcp.ObjectModelEncapsulateLegacy.true...object-graph>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <shared-views>
+    <shared-view name='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+      <datasources>
+        <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+        <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+        <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+        <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+        <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]'>
+        <groupfilter function='member' level='[my:fecha_even:ok]' member='201901' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+        <target field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]' />
+      </filter>
+      <filter class='categorical' column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]'>
+        <groupfilter function='level-members' level='[none:alcaldia:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+        <target field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <worksheets>
+    <worksheet name='AlcaldiaFilter'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{D4348C96-4C3A-4A92-AF4A-1B2E92ABDC33}' />
+    </worksheet>
+    <worksheet name='Card'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total de Accidentes &lt;</run>
+            <run>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</run>
+            <run>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='totalAccidentes' datatype='integer' name='[Calculation_1475491848836407298]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([id_accidente])' />
+            </column>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column caption='Id Accidente' datatype='integer' name='[id_accidente]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1475491848836407298]' derivation='User' name='[usr:Calculation_1475491848836407298:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+            <format attr='font-size' data-class='subtotal' value='48' />
+            <format attr='font-size' data-class='total' value='36' />
+            <format attr='font-weight' data-class='total' value='bold' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='font-size' data-class='subtotal' value='36' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+            <format attr='font-weight' data-class='subtotal' value='bold' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='text-align' scope='rows' value='center' />
+            <format attr='vertical-align' scope='rows' value='center' />
+            <format attr='text-orientation' scope='rows' value='0' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='font-size' value='28' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <text column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[usr:Calculation_1475491848836407298:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{AFBC19CD-D2FC-4123-870D-656FB0BFAFA1}' />
+    </worksheet>
+    <worksheet name='Heatmap'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontsize='12'>Mapa de calor de Accidentes Acumulados</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='Freq' datatype='integer' name='[Calculation_1475491848796438528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column caption='Dia' datatype='string' name='[dia]' role='dimension' type='nominal' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column caption='Hora' datatype='datetime' name='[hora]' role='dimension' type='ordinal' />
+            <column-instance column='[hora]' derivation='Hour' name='[hr:hora:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[dia]' derivation='None' name='[none:dia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1475491848796438528]' derivation='Sum' name='[sum:Calculation_1475491848796438528:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:dia:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;lunes&quot;</bucket>
+              <bucket>&quot;martes&quot;</bucket>
+              <bucket>&quot;miercoles&quot;</bucket>
+              <bucket>&quot;jueves&quot;</bucket>
+              <bucket>&quot;viernes&quot;</bucket>
+              <bucket>&quot;sabado&quot;</bucket>
+              <bucket>&quot;domingo&quot;</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:dia:nk]' value='60' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='size-bar' field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[sum:Calculation_1475491848796438528:qk]' field-type='quantitative' max-size='1' min-size='0.005' type='centersize' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[sum:Calculation_1475491848796438528:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='has-stroke' value='false' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:dia:nk]</rows>
+        <cols>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[hr:hora:ok]</cols>
+      </table>
+      <simple-id uuid='{3E4839AB-FF69-429F-988E-6E4CF8AD13F1}' />
+    </worksheet>
+    <worksheet name='Map'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontsize='12'><![CDATA[Mapa de Accidentes 2019 en CDMX en las alcaldias <]]></run>
+            <run bold='true' fontalignment='1' fontsize='12'>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</run>
+            <run bold='true' fontalignment='1' fontsize='12'>&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Coordena 1' datatype='real' name='[coordena_1]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Coordenada' datatype='real' name='[coordenada]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column caption='Identidad' datatype='string' name='[identidad]' role='dimension' type='nominal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[coordena_1]' derivation='None' name='[none:coordena_1:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[coordenada]' derivation='None' name='[none:coordenada:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[identidad]' derivation='None' name='[none:identidad:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:coordenada:qk]' field-type='quantitative' max='-11010130.635657463' min='-11042987.328896601' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:coordena_1:qk]' field-type='quantitative' max='2187205.1354684541' min='2179430.4840516993' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='b01002_001e' value='false' />
+            <format attr='enabled' id='b01002_002e' value='false' />
+            <format attr='enabled' id='b01002_003e' value='false' />
+            <format attr='enabled' id='dp02_0001e' value='false' />
+            <format attr='enabled' id='dp02_0015e' value='false' />
+            <format attr='enabled' id='dp03_0027e_plus_dp03_0029e' value='false' />
+            <format attr='enabled' id='dp03_0028e' value='false' />
+            <format attr='enabled' id='dp03_0030e_plus_dp03_0031e' value='false' />
+            <format attr='enabled' id='dp03_0062e' value='false' />
+            <format attr='enabled' id='dp03_0088e' value='false' />
+            <format attr='enabled' id='dp04_0001e' value='false' />
+            <format attr='enabled' id='dp04_0046e' value='false' />
+            <format attr='enabled' id='dp04_0047e' value='false' />
+            <format attr='enabled' id='dp04_0089e' value='false' />
+            <format attr='enabled' id='dp05_0001e' value='false' />
+            <format attr='enabled' id='dp05_0002e_div_dp05_0003e' value='false' />
+            <format attr='enabled' id='dp05_0032e' value='false' />
+            <format attr='enabled' id='dp05_0033e' value='false' />
+            <format attr='enabled' id='dp05_0034e' value='false' />
+            <format attr='enabled' id='dp05_0039e' value='false' />
+            <format attr='enabled' id='dp05_0047e' value='false' />
+            <format attr='enabled' id='dp05_0053e' value='false' />
+            <format attr='enabled' id='dp05_0066e' value='false' />
+            <format attr='enabled' id='dp05_0077e' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0' />
+            <format attr='map-style' value='outdoors' />
+          </style-rule>
+          <style-rule element='map-data-layer'>
+            <format attr='palette' value='tableau-map-blue-green-light' />
+            <format attr='geo-area-type' value='State' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:identidad:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='false' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:coordena_1:qk]</rows>
+        <cols>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:coordenada:qk]</cols>
+      </table>
+      <simple-id uuid='{EBF97481-6956-4AC6-B49C-30E395B9713C}' />
+    </worksheet>
+    <worksheet name='Pie'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='Freq' datatype='integer' name='[Calculation_1475491848796438528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column caption='Identidad' datatype='string' name='[identidad]' role='dimension' type='nominal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[identidad]' derivation='None' name='[none:identidad:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1475491848796438528]' derivation='Sum' name='[sum:Calculation_1475491848796438528:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <encodings>
+              <color column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:identidad:nk]' />
+              <wedge-size column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[sum:Calculation_1475491848796438528:qk]' />
+              <size column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[sum:Calculation_1475491848796438528:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{9442E18D-3AED-4B02-A43A-556CC0752834}' />
+    </worksheet>
+    <worksheet name='Sheet 6'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='totalAccidentes' datatype='integer' name='[Calculation_1475491848836407298]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([id_accidente])' />
+            </column>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column caption='Id Accidente' datatype='integer' name='[id_accidente]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1475491848836407298]' derivation='User' name='[usr:Calculation_1475491848836407298:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <text column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[usr:Calculation_1475491848836407298:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{B2496998-32C0-43FF-BFC0-EF41D109A0A0}' />
+    </worksheet>
+    <worksheet name='calendarWidget'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+            <column caption='Freq' datatype='integer' name='[Calculation_1475491848796438528]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='1' />
+            </column>
+            <column caption='Alcaldia' datatype='string' name='[alcaldia]' role='dimension' type='nominal' />
+            <column-instance column='[fecha_even]' derivation='Day' name='[dy:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+            <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[alcaldia]' derivation='None' name='[none:alcaldia:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1475491848796438528]' derivation='Sum' name='[sum:Calculation_1475491848796438528:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[fecha_even]' derivation='Weekday' name='[wd:fecha_even:ok]' pivot='key' type='ordinal' />
+            <column-instance column='[fecha_even]' derivation='Week' name='[wk:fecha_even:ok]' pivot='key' type='ordinal' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]</column>
+            <column>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='display' field='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[wk:fecha_even:ok]' value='false' />
+          </style-rule>
+          <style-rule element='worksheet'>
+            <format attr='display-field-labels' scope='cols' value='false' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Square' />
+            <encodings>
+              <color column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[sum:Calculation_1475491848796438528:qk]' />
+              <text column='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[dy:fecha_even:ok]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-show' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[wk:fecha_even:ok]</rows>
+        <cols>[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[wd:fecha_even:ok]</cols>
+      </table>
+      <simple-id uuid='{8D5EC635-F0DB-4520-92F8-44D17C865A71}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <style />
+      <size sizing-mode='automatic' />
+      <datasources>
+        <datasource caption='fact_accidentes' name='federated.1bsgn101rb2rs71h2b06b1ijbnzj' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1bsgn101rb2rs71h2b06b1ijbnzj'>
+        <column caption='Fecha Even' datatype='date' datatype-customized='true' name='[fecha_even]' role='dimension' type='ordinal' />
+        <column-instance column='[fecha_even]' derivation='MY' name='[my:fecha_even:ok]' pivot='key' type='ordinal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='4' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='97436' id='6' param='vert' type-v2='layout-flow' w='67491' x='18441' y='1282'>
+            <zone fixed-size='92' h='14744' id='36' is-fixed='true' param='horz' type-v2='layout-flow' w='67491' x='18441' y='1282'>
+              <zone h='14744' id='40' param='horz' type-v2='layout-flow' w='67491' x='18441' y='1282'>
+                <zone h='14744' id='41' param='horz' type-v2='layout-flow' w='67491' x='18441' y='1282' />
+              </zone>
+            </zone>
+            <zone h='46474' id='34' name='Map' w='67491' x='18441' y='16026'>
+              <layout-cache minheight='238' minwidth='202' type-h='scalable' type-w='scalable' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+            <zone h='36218' id='43' name='Heatmap' w='67491' x='18441' y='62500'>
+              <layout-cache fixed-size-h='218' type-h='fixed' type-w='fixed' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='97436' id='25' is-fixed='true' type-v2='layout-basic' w='17681' x='760' y='1282'>
+            <zone h='12639' id='11' param='vert' type-v2='layout-flow' w='17681' x='760' y='1282'>
+              <zone h='12639' id='24' param='vert' type-v2='layout-flow' w='17681' x='760' y='1282'>
+                <zone h='12639' id='42' name='Card' w='17681' x='760' y='1282'>
+                  <layout-cache fixed-size-h='158' type-h='fixed' type-w='fixed' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+            <zone h='84797' id='29' is-fixed='true' type-v2='layout-basic' w='17681' x='760' y='13921'>
+              <zone h='33034' id='26' param='vert' type-v2='layout-flow' w='17681' x='760' y='13921'>
+                <zone fixed-size='57' h='9135' id='27' is-fixed='true' param='vert' type-v2='layout-flow' w='17681' x='760' y='13921'>
+                  <zone h='8333' id='32' mode='dropdown' name='AlcaldiaFilter' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]' type-v2='filter' w='17681' x='760' y='13921'>
+                    <zone-style>
+                      <format attr='border-color' value='#000000' />
+                      <format attr='border-style' value='none' />
+                      <format attr='border-width' value='0' />
+                      <format attr='margin' value='4' />
+                    </zone-style>
+                  </zone>
+                </zone>
+              </zone>
+              <zone h='51763' id='30' param='vert' type-v2='layout-flow' w='17681' x='760' y='46955'>
+                <zone h='51763' id='15' name='AlcaldiaFilter' show-title='false' w='17681' x='760' y='46955'>
+                  <layout-cache cell-count-h='1' cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone h='40293' id='37' param='horz' type-v2='layout-flow' w='13308' x='85932' y='16026'>
+            <zone h='40293' id='35' name='Map' pane-specification-id='0' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:identidad:nk]' type-v2='color' w='13308' x='85932' y='16026'>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='4' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone h='14744' id='38' param='vert' type-v2='layout-flow' w='13308' x='85932' y='1282' />
+          <zone h='42399' id='39' param='vert' type-v2='layout-flow' w='13308' x='85932' y='56319' />
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='1050' minheight='1050' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='23' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='97440' id='22' param='vert' type-v2='layout-flow' w='97538' x='1231' y='1280'>
+                <zone fixed-size='88' h='11200' id='15' is-fixed='true' name='AlcaldiaFilter' show-title='false' w='20000' x='1231' y='87520'>
+                  <layout-cache cell-count-w='1' type-h='cell' type-w='cell' />
+                  <zone-style>
+                    <format attr='border-color' value='#000000' />
+                    <format attr='border-style' value='none' />
+                    <format attr='border-width' value='0' />
+                    <format attr='margin' value='4' />
+                    <format attr='padding' value='0' />
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{C922968F-EC5B-40D7-BA0D-69261A366041}' />
+    </dashboard>
+    <dashboard _.fcp.AccessibleZoneTabOrder.true...enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='860' maxwidth='650' minheight='560' minwidth='420' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='1' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{23AD78AB-2437-48D9-88BC-AAA6C528FE3D}' />
+    </dashboard>
+  </dashboards>
+  <windows source-height='30'>
+    <window class='worksheet' name='Heatmap'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='fit-width' />
+      </viewpoint>
+      <simple-id uuid='{FCF0E19B-2646-4597-9870-367D0387C3E1}' />
+    </window>
+    <window class='worksheet' name='Map'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:identidad:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4A0D00B1-A1EA-42FD-8E7F-46AFC7F32324}' />
+    </window>
+    <window class='worksheet' name='calendarWidget'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='dropdown' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[my:fecha_even:ok]' type='filter' />
+            <card mode='checkdropdown' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{571746DF-6365-4B1D-A45E-EB654A2093EF}' />
+    </window>
+    <window class='worksheet' name='AlcaldiaFilter'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card mode='checkdropdown' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:alcaldia:nk]' type='filter' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{5D45AE51-0016-4EC3-BE35-4E6C9BBD413B}' />
+    </window>
+    <window class='worksheet' name='Card'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{4B2F2431-78F2-45E7-AD3A-903B80CD1270}' />
+    </window>
+    <window class='worksheet' name='Pie'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[none:identidad:nk]' type='color' />
+            <card pane-specification-id='0' param='[federated.1bsgn101rb2rs71h2b06b1ijbnzj].[sum:Calculation_1475491848796438528:qk]' type='size' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EC362CCE-E149-4AA2-8915-53937972915A}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='AlcaldiaFilter'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Card' />
+        <viewpoint name='Heatmap'>
+          <zoom type='fit-width' />
+        </viewpoint>
+        <viewpoint name='Map'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='-1' />
+      <simple-id uuid='{07D82EFC-EE9E-4E50-9BCD-4DC84B928C7A}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{8A8914C2-F19C-418F-8709-DC0AE6046E53}' />
+    </window>
+    <window class='worksheet' name='Sheet 6'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{E8003CDD-D4F9-4FD7-A4CF-3537671615AC}' />
+    </window>
+  </windows>
+</workbook>
