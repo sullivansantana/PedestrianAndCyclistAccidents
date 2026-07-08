@@ -4,7 +4,7 @@
 
 This project analyzes traffic accidents involving **pedestrians and cyclists** in **Mexico City during 2019**, using publicly available data from **Datos México**.
 
-The objective was to build an end-to-end Business Intelligence project by extracting, cleaning, transforming, and analyzing accident records before presenting the results in an interactive Power BI dashboard.
+The objective was to build an end-to-end Business Intelligence project by extracting, cleaning, transforming, and analyzing accident records before presenting the results in an interactive Tableau dashboard.
 
 This project demonstrates a typical Data Analyst workflow, including data preparation, SQL analysis, and dashboard development.
 
@@ -103,7 +103,7 @@ Accidentes-CDMX/
 
 - SQLite
 - SQL
-- Power BI
+- Tableau
 - Git
 - GitHub
 - CSV Files
