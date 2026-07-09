@@ -170,8 +170,15 @@ Top Boroughs(Alcaldía) by Accident Count.
 |4|GUSTAVO A MADERO|407|
 |5|COYOACAN|368|
 
-- Accidents by month.
-- Cyclist vs pedestrian accidents.
+Accidents by month.
+
+Cyclist vs pedestrian accidents.
+
+|Identity|Fatalities|Injuries|
+|---|---|---|
+|Cyclist|11|730|
+|Pedestrian|173|4069|
+
 - Most common injuries.
 - Total fatalities.
 - Total injured people.
