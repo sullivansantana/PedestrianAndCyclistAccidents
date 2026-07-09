@@ -15,7 +15,7 @@ This project demonstrates a typical Data Analyst workflow, including data prepar
 - Merge pedestrian and cyclist accident datasets into a unified fact table.
 - Clean and standardize accident information.
 - Perform exploratory and business-oriented SQL analysis.
-- Build an interactive dashboard in Power BI.
+- Build an interactive dashboard in Tableau.
 - Showcase SQL and Business Intelligence skills for a Data Analyst portfolio.
 
 ---
@@ -57,7 +57,7 @@ Fact Table
 Business Questions
         │
         ▼
-Power BI Dashboard
+Tableau Dashboard
 ```
 
 ---
@@ -85,10 +85,10 @@ Accidentes-CDMX/
 │   └── 04_cleaning_columns.sql
 │
 ├── powerbi/
-│   └── AccidentesCDMX.pbix
+│   └── AccidentesDashboard_CDMX.twb
 │
 ├── images/
-│   ├── dashboard.png
+│   ├── TableauDashborad.png
 │   ├── map.png
 │   └── model.png
 │
@@ -156,10 +156,20 @@ Example:
 
 ### 3. SQL Analysis
 
-Business questions answered include:
+### Business questions answered include:
 
-- Total accident records.
-- Accidents by borough (Alcaldía).
+Total accident records. *4657*
+
+Top Boroughs(Alcaldía) by Accident Count.
+
+|Rank|Borough|Accident Count|
+|---|---|---|
+|1|CUAUHTEMOC|920|
+|2|IZTAPALAPA|661|
+|3|MIGUEL HIDALGO|410|
+|4|GUSTAVO A MADERO|407|
+|5|COYOACAN|368|
+
 - Accidents by month.
 - Cyclist vs pedestrian accidents.
 - Most common injuries.
