@@ -174,14 +174,16 @@ Accidents by month.
 
 Cyclist vs pedestrian accidents.
 
+Total fatalities and injured people.
+
 |Identity|Fatalities|Injuries|
 |---|---|---|
 |Cyclist|11|730|
 |Pedestrian|173|4069|
 
 - Most common injuries.
-- Total fatalities.
-- Total injured people.
+
+
 
 ---
 
