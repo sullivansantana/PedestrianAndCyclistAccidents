@@ -76,7 +76,8 @@ Accidentes-CDMX/
 │       └── fact_accidentes.csv
 │
 ├── database/
-│   └── accidentes_cdmx.db
+│   ├── accidentes_cdmx.db
+│   └── accidentes_cdmx.db-journal 
 │
 ├── sql/
 │   ├── 01_insert_fact_accidentes.sql
@@ -84,14 +85,11 @@ Accidentes-CDMX/
 │   ├── 03_cleaning_dia_column.sql
 │   └── 04_cleaning_columns.sql
 │
-├── powerbi/
+├── Dashboard/
 │   └── AccidentesDashboard_CDMX.twb
 │
 ├── images/
-│   ├── TableauDashborad.png
-│   ├── map.png
-│   └── model.png
-│
+│   └── TableauDashborad.png│
 ├── README.md
 ├── LICENSE
 └── .gitignore
@@ -189,15 +187,13 @@ Total fatalities and injured people.
 
 ## 📊 Dashboard
 
-The Power BI dashboard includes:
+The Tableau dashboard includes:
 
-- KPI cards
-- Accident trend over time
-- Accidents by borough
-- Interactive map
-- Cyclist vs pedestrian comparison
-- Fatalities vs injuries
-- Interactive slicers
+- Interactive map displaying the location of each accident.
+- Heatmap analyzing accident patterns by hour and weekday.
+- Calendar filter for daily analysis.
+- Borough and month filters for dynamic exploration.
+- Pie chart comparing pedestrian and cyclist accidents.
 
 Example:
 
