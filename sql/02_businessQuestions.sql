@@ -36,8 +36,8 @@
 --    dia,
 --    COUNT(*) AS accidentes
 --FROM fact_accidentes
---GROUP BY ano_evento, mes
---ORDER BY ano_evento, accidentes DESC
+--GROUP BY dia
+--ORDER BY accidentes DESC
 
 --Tipos de accidente
 --SELECT
@@ -73,3 +73,5 @@
 --GROUP BY lesiones
 --ORDER BY TOTAL DESC
 
+SELECT DISTINCT lesiones
+FROM fact_accidentes
